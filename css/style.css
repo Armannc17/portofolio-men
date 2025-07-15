@@ -195,12 +195,46 @@ section {
   background: #686262;
 }
 
-.contact-section {
-  font-size: 1.5rem;
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
+.contact-section p {
+  margin-bottom: 1rem;
 }
+
+.contact-section a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-section i {
+  margin-right: 8px;
+  font-size: 22px;
+  transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+.contact-link.email i { color: #444; }
+
+.contact-link.linkedin i { color: #0077B5; }
+
+.contact-link.github i { color: #000; }
+
+.contact-link.instagram i { 
+  display: inline-block;
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-link:hover i {
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(0, 255, 153, 0.7);
+}
+
+.contact-link:hover {
+  color: #797e7c;
+}
+
 
 footer {
   background: #686262;
