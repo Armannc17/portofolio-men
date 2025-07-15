@@ -1,0 +1,243 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #686262;
+  line-height: 1.6;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+  border-radius: 10px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background: #ffffff;
+  animation: fadeIn 2s ease;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #000000;
+  animation: fadeIn 2s ease;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+}
+
+h2 {
+  border-bottom: 2px solid #797e7c;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.body-content {
+  padding: 2rem;
+  background: #ffffff;
+  min-height: calc(100vh - 200px);
+  box-sizing: content-box;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin: 2rem auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  max-width: 1200px;
+  transition: background 0.5s, color 0.5s;
+  animation: fadeInUp 1s ease;
+}
+
+.container {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+
+}
+
+.informasi-pribadi {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.timeline {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+
+nav {
+  margin-top: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  background: #686262;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav a {
+  color: #000000;
+  margin: 0 1rem;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  transition: color 0.3s;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #797e7c;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeInUp 1s ease;
+}
+
+.info-section {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.info-label {
+  width: 180px; /* lebar tetap untuk meratakan titik dua */
+}
+
+.info-value {
+  flex: 1;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project a {
+  color: #797e7c;
+  text-decoration: underline;
+}
+
+.project-card .card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+  transition: transform 0.3s;
+}
+
+.project-card .card:hover {
+  transform: translateY(-8px);
+}
+
+.card {
+  
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem 1.5rem;
+  color: #000;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #797e7c;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-view:hover {
+  background: #686262;
+}
+
+.contact-section {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+footer {
+  background: #686262;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #f4f4f4;
+  color: #111;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #ddd;
+}
+
+body.dark-mode nav a {
+  color: #111;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
