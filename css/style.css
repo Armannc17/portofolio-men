@@ -275,3 +275,39 @@ body.dark-mode nav a {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .project-card .card {
+    flex-direction: column; 
+    max-width: 100%; 
+    margin: 1rem auto; 
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 2rem; 
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .body-content, section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .container, .informasi-pribadi, .timeline {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
